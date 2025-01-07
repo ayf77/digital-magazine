@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Mel</title>
+
+    <!-- CSS Linked -->
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/mel.css">
+
+    <!-- Fonts -->
+    <!-- Rubik Vinyl for headers -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Vinyl&family=Sunflower:wght@300" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/rebel-nation" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/diveball.png">
+
+    <!-- Icons from Google Fonts? -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <header>
+        <!-- add header logo + page links -->
+        <!-- ADD POKEBALLS TO THE OTHER ONES -->
+        <a href="index.html"><img id=logo src="images/pokeball-icon.svg" alt="Pokeball Icon"></a>
+
+        <nav id="desktop-nav">
+            <a href="index.html"><img class="regular" src="images/pokeball.png" alt="Closed Pokeball Icon"><img
+                    class="hover" src="images/pokeball-hover.jpg" alt="Open Pokeball Icon">HOME</a>
+
+            <a id="reo" href="reo.html"><img class="regular" src="images/dreamball.png" alt="Closed Dreamball Icon"><img
+                    class="hover" src="images/dreamball-hover.jpg" alt="Open Dreamball Icon">REO</a>
+
+            <a href="aymen.html"><img class="regular" src="images/sportball.png" alt="Closed Sportball Icon"><img
+                    class="hover" src="images/sportball-hover.jpg" alt="Open Sportball Icon">AYMEN</a>
+
+            <a href="mel.html"><img class="regular" src="images/diveball.png" alt="Closed Diveball Icon"><img
+                    class="hover" src="images/diveball-hover.jpg" alt="Open Diveball Icon">MEL</a>
+
+            <a href="about.html"><img class="regular" src="images/pokeball.png" alt="Closed Pokeball Icon"><img
+                    class="hover" src="images/pokeball-hover.jpg" alt="Open Pokeball Icon">ABOUT US</a>
+        </nav>
+
+        <!-- MAKE A MOBILE NAV -->
+        <nav id="mobile-nav">
+            <button onclick="toggleMenu()">
+                <p class="material-symbols-outlined">
+                    menu
+                </p>
+            </button><br>
+            <div class="dropdown link hide">
+                <div class="dropdown-content">
+                    <a class="link hide" href="index.html">HOME <img class="regular" src="images/pokeball.png"
+                            alt="Closed Pokeball Icon"><img class="hover" src="images/pokeball-hover.jpg"
+                            alt="Open Pokeball Icon"></a><br>
+
+                    <a id="reo" class="link hide" href="reo.html">REO <img class="regular" src="images/dreamball.png"
+                            alt="Closed Dreamball Icon"><img class="hover" src="images/dreamball-hover.jpg"
+                            alt="Open Dreamball Icon"></a><br>
+
+                    <a class="link hide" href="aymen.html">AYMEN <img class="regular" src="images/sportball.png"
+                            alt="Closed Sportball Icon"><img class="hover" src="images/sportball-hover.jpg"
+                            alt="Open Sportball Icon"></a><br>
+
+                    <a class="link hide" href="mel.html">MEL <img class="regular" src="images/diveball.png"
+                            alt="Closed Diveball Icon"><img class="hover" src="images/diveball-hover.jpg"
+                            alt="Open Diveball Icon"></a><br>
+
+                    <a class="link hide" href="about.html">ABOUT US <img class="regular" src="images/pokeball.png"
+                            alt="Closed Pokeball Icon"><img class="hover" src="images/pokeball-hover.jpg"
+                            alt="Open Pokeball Icon"></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="trainer-info">
+
+            <!--need to add image to reo's folder-->
+            <img class="trainer" src="images/trainer-mel.png" alt="Pokemon Trainer Mel Sprite">
+
+            <div class="info">
+                <h2>Mel</h2>
+                <p>Age: 18</p>
+                <p>Region: Kalos</p>
+                <span>Specializes in: </span><img class="pokemon-type" src="images/type-ice.png"
+                    alt="Ice Type Icon"><span> Ice Types</span>
+                <p>Location: Dendemille Town</p>
+                <p>Badge: Alpine Badge</p>
+            </div>
+        </div>
+
+        <div class="tldr">
+
+            <h2 class="about">About</h2>
+
+            <p class="block-o-text1">Mel works as a Pokemon Ranger in the area surrounding the Frost Cavern. The Frost
+                Cavern is located in the mountain range outside Dendemille town, hidden in a pine forest. Pokemon
+                Rangers work to protect wild Pokemon, their environment and lost or hurt trainers. It is a popular place
+                for trainers with Eevee's to go if they wish for a Glaceon. Which means there's always someone that
+                needs help after getting lost in the cold. Trainers also have a tendency to upset the nearby Abomasnows,
+                so Mel spends a good bit of time calming them down.</p>
+            <br>
+            <p class="block-o-text2">With the chilly weather, Mel wears winter gear to keep them warm. She has a thick
+                white winter coat with green detailing around the cuffs, similar to a pine tree. Dark blue snowpants let
+                Mel not have to worry about being thrown in the snow. It sometimes get
+                windy up on the mountain, so Mel's hair stays up with green ties as to not blow around. It also lets
+                them match with their ace, Abomasnow. This makes Mel dependenent on their big green and white scarf
+                to protect her face and neck from the cold. Like other Pokemon Rangers, Mel also carries a rope
+                and other tools that may help in the forest.
+            </p>
+
+        </div>
+
+        <div class="team">
+            <h2 class="thing">POKEMON</h2>
+            <p id="warning">hover for sound</p>
+            <div class="team-info">
+                <div class="walrein">
+                    <img id="walrein" class="pokemon-info" src="images/pkmn-walrein.png" alt="Walrein">
+                    <h3>Walrein</h3>
+                    <button class="type ice">Ice</button> <button class="type water">Water</button>
+                </div>
+
+                <div class="glaceon">
+                    <img id="glaceon" class="pokemon-info" src="images/pkmn-glaceon.png" alt="Glaceon">
+                    <h3>Glaceon</h3>
+                    <button class="type ice">Ice</button>
+                </div>
+
+                <div class="avalugg">
+                    <img id="avalugg" class="pokemon-info" src="images/pkmn-avalugg.png" alt="Avalugg">
+                    <h3>Avalugg</h3>
+                    <button class="type ice">Ice</button>
+                </div>
+
+                <div class="delibird">
+                    <img id="delibird" class="pokemon-info" src="images/pkmn-delibird.png" alt="Delibird">
+                    <h3>Delibird</h3>
+                    <button class="type ice">Ice</button> <button class="type flying">Flying</button>
+                </div>
+
+                <div class="abomasnow">
+                    <img id="abomasnow" class="pokemon-info" src="images/pkmn-abomasnow.png" alt="Abomasnow">
+                    <h3>Abomasnow</h3>
+                    <button class="type grass">Grass</button> <button class="type ice">Ice</button>
+                </div>
+            </div>
+
+    </main>
+
+    <footer>
+        <p>Copyright © 1995 - 2024 Pokémon</p>
+    </footer>
+
+    <script src="scripts/mel.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokePost</title>
+
+    <!-- CSS Linked -->
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/index.css">
+
+    <!-- Fonts -->
+    <!-- Rubik Vinyl for headers CHANGE THIS FOR HOME PAGE (rubik is for reo) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Vinyl&family=Sunflower:wght@300" rel="stylesheet">
+
+    <!-- Different body font -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/pokeball.png">
+
+    <!-- Icons from Google Fonts? -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!--Menu Hamburger-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!--Right Chevron-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!--Left Chevron-->
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img id=logo src="images/pokeball-icon.svg" alt="Pokeball Icon"></a>
+
+        <nav id="desktop-nav">
+            <a href="index.html"><img class="regular" src="images/pokeball.png" alt="Closed Pokeball Icon"><img
+                    class="hover" src="images/pokeball-hover.jpg" alt="Open Pokeball Icon">HOME</a>
+
+            <a id="reo" href="reo.html"><img class="regular" src="images/dreamball.png" alt="Closed Dreamball Icon"><img
+                    class="hover" src="images/dreamball-hover.jpg" alt="Open Dreamball Icon">REO</a>
+
+            <a href="aymen.html"><img class="regular" src="images/sportball.png" alt="Closed Sportball Icon"><img
+                    class="hover" src="images/sportball-hover.jpg" alt="Open Sportball Icon">AYMEN</a>
+
+            <a href="mel.html"><img class="regular" src="images/diveball.png" alt="Closed Diveball Icon"><img
+                    class="hover" src="images/diveball-hover.jpg" alt="Open Diveball Icon">MEL</a>
+
+            <a href="about.html"><img class="regular" src="images/pokeball.png" alt="Closed Pokeball Icon"><img
+                    class="hover" src="images/pokeball-hover.jpg" alt="Open Pokeball Icon">ABOUT US</a>
+        </nav>
+
+        <!-- MAKE A MOBILE NAV -->
+        <nav id="mobile-nav">
+            <button onclick="toggleMenu()">
+                <p class="material-symbols-outlined">
+                    menu
+                </p>
+            </button><br>
+            <div class="dropdown link hide">
+                <div class="dropdown-content">
+                    <a class="link hide" href="index.html">HOME <img class="regular" src="images/pokeball.png"
+                            alt="Closed Pokeball Icon"><img class="hover" src="images/pokeball-hover.jpg"
+                            alt="Open Pokeball Icon"></a><br>
+
+                    <a id="reo" class="link hide" href="reo.html">REO <img class="regular" src="images/dreamball.png"
+                            alt="Closed Dreamball Icon"><img class="hover" src="images/dreamball-hover.jpg"
+                            alt="Open Dreamball Icon"></a><br>
+
+                    <a class="link hide" href="aymen.html">AYMEN <img class="regular" src="images/sportball.png"
+                            alt="Closed Sportball Icon"><img class="hover" src="images/sportball-hover.jpg"
+                            alt="Open Sportball Icon"></a><br>
+
+                    <a class="link hide" href="mel.html">MEL <img class="regular" src="images/diveball.png"
+                            alt="Closed Diveball Icon"><img class="hover" src="images/diveball-hover.jpg"
+                            alt="Open Diveball Icon"></a><br>
+
+                    <a class="link hide" href="about.html">ABOUT US <img class="regular" src="images/pokeball.png"
+                            alt="Closed Pokeball Icon"><img class="hover" src="images/pokeball-hover.jpg"
+                            alt="Open Pokeball Icon"></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id='carousel' class="carousel">
+            <button class="carousel__left">
+                <span class="material-symbols-outlined">chevron_left</span>
+            </button>
+            <div class="inner_carousel">
+                <img id="banner-reo" src="/images/banner-reo.JPG" alt="Reo's Team Banner">
+                <img id="banner-aymen" src="/images/banner-aymen.JPG" alt="Aymen's Team Banner">
+                <img id="banner-mel" src="/images/banner-mel.JPG" alt="Mel's Team Banner">
+            </div>
+            <button class="carousel__right">
+                <span class="material-symbols-outlined">chevron_right</span>
+            </button>
+        </div>
+
+        <!-- Welcome Message -->
+        <div id="welcome">
+            <img src="images/stamp.png" alt="Poke Stamp">
+            <h2 class="center">Welcome to PokePost !</h2>
+            <p>Welcome to the wondrous world of Pokemon! PokePost is THE digital magazine to meet and learn about strong
+                trainers in different regions all around the world. Every issue has a set of 3 different people we
+                interview including but not limited to the well-respected archeologist and champion of Sinnoh–Cynthia,
+                the elusive wanderer–Red, and even the popular fashionista–Elesa. We strive to deliver intriguing and
+                informative news about each trainer’s origin, personality, and their beloved Pokemon. We also wish to
+                give hopeful young trainers a form of inspiration and role models they can look up to while pursuing
+                their Pokemon trainer path. However, we believe in keeping our selection of guests diverse; PokePost
+                also looks to interview other careers such as Pokemon breeders, stylists, and even professors. </p>
+
+            <br><br>
+            <p>In celebration of our 100th issue, PokePost has set up special interviews with 3 powerful Elite Four
+                members who have decided to take a break from Pokemon battles and travel around the world. Reo–the
+                enigmatic and mischievous kitsune spirit who roams the streets of Stow-on-Side alongside her Hisuian
+                Zoroark; Aymen–the headstrong but compassionate brawler accompanied by her faithful Lucario; and Mel–the
+                quiet alpine forest ranger who takes care of the Frost Caverns assisted by her Abomasnow. Thank you to
+                our loyal readers for supporting PokePost, please stay tuned for future issues and enjoy reading about
+                the magical world of Pokemon!</p>
+        </div>
+
+        <!-- Featured Guests (links to our respective pages) -->
+        <div id="guests-background">
+            <div id="guests">
+                <h2 class="center guest-button">Featured Guests</h2>
+                <div>
+                    <img id="reo-bkgd" src="images/trainer-reo.png" alt="Reo Trainer Image">
+                    <a class="guest-button" href="reo.html">REO</a>
+                </div>
+                <div>
+                    <img id="aymen-bkgd" src="images/trainer-aymen.png" alt="Aymen Trainer Image">
+                    <a class="guest-button" href="aymen.html">AYMEN</a>
+                </div>
+                <div>
+                    <img id='mel-bkgd' src="images/trainer-mel.png" alt="Mel Trainer Image">
+                    <a class="guest-button" href="mel.html">MEL</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright © 1995 - 2024 Pokémon</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

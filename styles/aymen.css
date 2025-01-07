@@ -1,0 +1,321 @@
+/* Main Background */
+main{
+    background-image: linear-gradient(rgba(218, 80, 0, 0.57), rgba(255, 98, 0, 0.7) ), url('/images/wallpaper-fighting.jpg');
+}
+
+main{
+    padding-top: 20px;
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+/* Trainer Info Display */
+.trainer-info{
+    clear: both;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 30px;
+    row-gap: 30px;
+    margin: 0px 10vw 3vw 10vw; /*top right bottom left*/
+    padding: 30px;
+    text-align: left;
+}
+
+#about-border{ /* Text about self */
+    grid-row: span 2;
+    text-align: left;
+    padding: 0.5vw;
+    clip-path: polygon(0vw 5%, 6% 0vw, 94% 0px, 100% 5%, 100% 95%,  94% 100%, 6% 100%, 0% 95%);
+    background-color: rgb(255, 255, 255);
+
+
+}
+
+#about {
+   background-color: rgb(175, 70, 0);
+    padding: 4vw;
+    clip-path: polygon(0vw 5%, 6% 0vw, 94% 0px, 100% 5%, 100% 95%,  94% 100%, 6% 100%, 0% 95%);
+}
+
+.trainer-info img{
+    max-width: 500px;
+}
+
+.desktop-character {
+    margin-left:-130px;
+}
+
+
+#mb-trainer-sprite{
+    display: none;
+}
+
+.pokemon-type{
+    width: 1em;
+    height: 1em !important;
+    vertical-align: text-top;
+}
+
+.trainer-info div{
+    color: white;
+    line-height: 40px;
+}
+
+.trainer-info h2{
+    margin-bottom: 10px;
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+/* Pokemon Display */
+#warning{
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.team{
+    color: white;
+    margin: 0px 10vw 0px 10vw;
+    padding: 30px;
+}
+
+.team-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding-top: 20px;
+}
+
+#first-row {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    column-gap: 20px;
+}
+
+#second-row {
+    grid-column: span 1;
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    column-gap: 20px;
+   
+}
+
+#last-row{
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    column-gap: 20px;
+}
+
+.mb-display{
+    display: none;
+}
+
+.pokemon-info{
+    width: 21vw;
+    padding: 1.5vw;
+    background-image: radial-gradient( rgb(255, 115, 0), rgb(151, 66, 0), rgb(87, 38, 0));
+    border-radius: 20px;
+    clip-path: polygon(0vw 5%, 6% 0vw, 94% 0px, 100% 5%, 100% 95%,  94% 100%, 6% 100%, 0% 95%);
+
+}
+
+@media screen and (max-width: 1220px) {
+    .poke-border {
+        border: solid white 3px;
+        background-color:white;
+        clip-path: polygon(0vw 5%, 6% 0vw, 94% 0px, 100% 5%, 100% 95%,  94% 100%, 6% 100%, 0% 95%);
+    }
+}
+
+.pokemon-info img{
+    width: 100%;
+    transition: transform .2s;
+}
+
+.pokemon-info img:hover{
+    transform: scale(1.2);
+}
+
+/* Typing Span Styling */
+.type{
+    color: white;
+    font-family: "Sunflower", system-ui;
+    font-size: 1em;
+    padding: 3px 30px 3px 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.ghost{
+    background-color: rgb(103, 60, 173);
+}
+
+.fighting{
+    background-color: rgb(213,103,35);
+}
+
+.ice{
+    background-color: rgb(81,196,231);
+}
+
+.psychic{
+    background-color: rgb(255, 56, 176);
+}
+
+.steel{
+    background-color: rgb(114, 145, 160);
+}
+
+.fire{
+    background-color: rgb(193, 0, 0);
+}
+
+.poke-border-mb {
+    display:none;
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+/* Misc */
+h2{
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    padding-bottom: 12px;
+}
+
+
+@media screen and (max-width: 1000px){
+    .trainer-info img{
+        max-width: 325px;
+    }
+
+    .team{
+        text-align: center;
+    }
+
+    .team-info {
+        grid-template-columns: 1fr;
+    }
+
+    #last-row{
+        display: none;
+    }
+
+    #first-row{
+        display: none;
+    }
+
+    #second-row{
+        display: none;
+    }
+    
+
+    .mb-display{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+
+    .team-info :nth-child(6){
+        grid-column: span 1;
+        justify-items: center;
+    }
+
+    .pokemon-info{
+        width: 33vw;
+    }
+ 
+}
+
+/* changing the trainer info grid*/
+@media screen and (max-width:1200px){
+
+
+    .trainer-info{
+        clear: both;
+        grid-template-columns: 1fr;
+        row-gap: 0px;
+        text-align: center;
+    }
+
+
+
+    #about-border{ /* Text about self */
+        grid-column: span 1;
+        grid-row: 3;
+        margin-top: 60px;
+        text-align: center;
+      
+    }
+
+
+    .trainer-info img{
+        max-width: 65vw;
+        display: none;
+    }
+
+    #mb-trainer-sprite{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+
+
+     #about {
+        clip-path: polygon(0vw 2%, 10% 0vw, 90% 0px, 100% 2%, 100% 98%,  92% 100%, 10% 100%, 0% 98%);
+        /* clip-path: polygon(0vw 5%, 6% 0vw, 94% 0px, 100% 5%, 100% 95%,  94% 100%, 6% 100%, 0% 95%); */
+     }
+
+     #about-border {
+        clip-path: polygon(0vw 2%, 10% 0vw, 90% 0px, 100% 2%, 100% 98%,  92% 100%, 10% 100%, 0% 98%);
+        /* clip-path: polygon(0vw 5%, 6% 0vw, 94% 0px, 100% 5%, 100% 95%,  94% 100%, 6% 100%, 0% 95%); */
+     }
+    /* Team Display */
+    .team h2{
+        text-align: center;
+    }
+
+    #warning{
+        text-align: center;
+    }
+    
+    .team-info {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        row-gap: 20px;
+    }
+
+    .mb-display{
+        display: block;
+    }
+
+    .team-info :nth-child(6){
+        grid-column: span 1;
+        justify-items: center;
+    }
+
+    .pokemon-info{
+        width: 60vw;
+        padding: 3vw;
+    }
+
+    /* Misc */
+    h2{
+        font-size: 2.5em !important;
+    }
+}
+

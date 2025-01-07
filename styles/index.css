@@ -1,0 +1,220 @@
+/* Carousel */
+.carousel {
+    height: 50vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.inner_carousel {
+    width: 100%;
+    height: 100%;
+}
+
+.inner_carousel>img {
+   width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.carousel > button {
+    z-index:5;
+    position:absolute;
+    top:40%;
+    cursor:pointer;
+    background: none;
+    color: white;
+}
+
+.carousel span{
+    font-size: 3em;
+}
+
+.carousel__right {
+    right:0;
+}
+
+.carousel--focus {
+    z-index:3;
+    animation:focus 1s;
+    
+}
+
+.carousel--last {
+    z-index:2;
+}
+
+@keyframes focus {
+ from {
+    opacity:0;
+ }
+
+ to {
+    opacity:1;
+ }
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+/* Welcome Message */
+#welcome{
+    border: 7px solid transparent;
+    border-image: url('/images/airmail-background.jpg') 20 stretch;
+    padding: 30px;
+    padding-bottom: 80px;
+}
+
+#welcome p{
+    margin: 0px 10vw 0px 10vw;
+    line-height: 40px;
+    font-family: "Caveat", cursive;
+    font-size: 1.4em;
+    font-weight: 400;
+}
+
+#welcome h2{
+    font-family: "Sunflower", system-ui; 
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+#welcome img{ 
+    float: left;
+    position: absolute;
+    width: 200px;
+    z-index: -2;
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+/* Featured Guests */
+#guests{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0px 10vw 0px 10vw;
+    justify-items: center;
+    column-gap: 30px;
+    row-gap: 30px;
+    padding-bottom: 80px;
+}
+
+#guests div{
+    display: grid;
+    text-align: center;
+    row-gap: 30px;
+}
+
+#guests h2{
+    margin-top: 80px;
+    margin-bottom: 50px;
+    font-family: "Sunflower", system-ui; 
+    grid-column: span 3;
+}
+
+#guests img{
+    width: 25vw;
+    transition: transform .2s;
+}
+
+#guests img:hover{
+    transform: scale(1.1);
+}
+
+#guests a{
+    font-size: 1.1em;
+    padding: 10px 50px 10px 50px !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* BACKGROUND STUFF*/
+#reo-guest{
+    transition: 0.4s;
+    background-image: linear-gradient(rgba(142, 124, 193, 0.7), rgba(13, 0, 60, 0.7)), url('/images/wallpaper-ghost-2.jpg');
+}
+
+#aymen-guest{
+    transition: 0.4s;
+    background-image: linear-gradient(rgba(183, 111, 28, 0.7), rgba(47, 12, 0, 0.7)), url('/images/wallpaper-fighting.jpg');
+}
+
+#mel-guest{
+    transition: 0.4s;
+    background-image: linear-gradient(rgba(184, 229, 255, 0.5), rgba(0, 57, 118, 0.5)), url('/images/wallpaper-ice.jpg');
+}
+
+/* Buttons */
+.ghost{
+    border: solid white;
+    border-radius: 20px;
+    box-shadow: 0 0px 15px rgba(255, 255, 255, 1);
+}
+
+.fighting{
+    background-color: rgb(213,103,35);
+    clip-path: 
+    polygon(
+      0% 30%,     /* top left */
+      10% 0%,     /* top left */
+      90% 0%,    /* top right */
+      100% 30%,   /* top right */
+      100% 70%,  /* bottom right */
+      90% 100%,  /* bottom right */
+      10% 100%,   /* bottom left */
+      0 70%      /* bottom left */
+    );
+}
+
+.ice{
+    background-color: rgb(224, 245, 255);
+    clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0% 50%, 25% 0%);
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 800px){
+    .carousel{
+        height: 60vw;
+    }
+
+    #welcome img{
+        width: 150px;
+    }
+
+    /* Guest Display */
+    #guests{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0px 10vw 0px 10vw;
+        justify-items: center;
+        column-gap: 30px;
+        row-gap: 100px;
+        padding-bottom: 80px;
+    }
+    
+    #guests h2{
+        grid-column: span 1;
+        margin-bottom: -50px;
+    }
+    
+    #guests img{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60vw;
+        transition: transform .2s;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .carousel{
+        height: 90vw;
+    }
+
+    #welcome img{
+        width: 125px;
+    }
+
+}
+

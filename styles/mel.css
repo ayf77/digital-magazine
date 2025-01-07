@@ -1,0 +1,288 @@
+main {
+    background-image: linear-gradient(rgba(145, 209, 247, 0.5), rgba(145, 209, 247, 0.5)), url('/images/wallpaper-ice.jpg');
+    display: grid;
+}
+/* --------------------------------------------------------------------------------------------------------- */
+/*introduction*/
+
+.trainer-info {
+    margin: 0px 10vw 0px 10vw;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr;
+    grid-row: 1/2;
+}
+
+.pokemon-type {
+    width: 1em;
+    height: 1em !important;
+    vertical-align: text-top;
+}
+
+.trainer {
+    max-width: 500px;
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.info {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    margin-top: auto;
+    margin-bottom: 50px;
+    line-height: 40px;
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+/*tldr*/
+
+.tldr {
+    display: grid;
+    grid-row: 2/3;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0px 10vw 0px 10vw;
+    padding: 2.5vw;
+    text-align: justify;
+    line-height: 40px;
+    background-image: url('/images/shattered-ice-small.svg');
+    background-repeat: no-repeat;
+    background-size:auto;
+}
+
+.about{
+    grid-row: 1/2;
+    grid-column: 4/5;
+    text-align: right;
+    font-size: 3.5em;
+}
+
+.block-o-text1{
+    grid-row: 2/3;
+    grid-column: 2/5;
+    padding-bottom: 12px;
+}
+
+.block-o-text2{
+    grid-row: 3/4;
+    grid-column: 2/5;
+    padding-left: 10vw;
+    padding-bottom: 370px;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------- */
+/*pokemon*/
+
+.team{
+    margin: -1000px 10vw 40px 10vw;
+    padding: 2.5vw;
+    background-image: url('/images/shattered-ice.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 60%;
+}
+
+.team-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.thing{
+    padding-top: 350px;
+    font-size: 3.5em;
+}
+
+.pokemon-info{
+    width: 21vw;
+    transition: transform .2s; 
+}
+
+.pokemon-info:hover{
+    transform: scale(1.2);
+}
+
+.walrein{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    margin: auto;
+}
+
+.glaceon{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    margin: auto;
+}
+
+.avalugg{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    margin: auto;
+}
+
+.delibird{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    margin: auto;
+}
+
+.abomasnow{
+    grid-row: 2/3;
+    grid-column: 3/4;
+    margin: auto;
+}
+
+#warning{
+    padding-bottom: 50px;
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+
+.type{
+    font-family: "Sunflower", system-ui;
+    font-size: 1em;
+    padding: 5px 30px 5px 30px;
+    clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0% 50%, 25% 0%);
+    color: rgb(50, 50, 50);
+}
+
+.ice{
+    background-color: rgb(61,206,243);
+}
+
+.water{
+    background-color: rgb(32, 124, 246);
+}
+
+.flying{
+    background-color: rgb(75, 162, 243);
+}
+
+.grass{
+    background-color: rgb(63,161,41);
+}
+
+#warning{
+    font-family: 'REBEL Nation', sans-serif;
+    letter-spacing: 5px;
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+/*misc*/
+
+h2 {
+    font-family: 'REBEL Nation', sans-serif;
+    padding-bottom: 12px;
+    color: rgb(15, 16, 29);
+}
+
+@media screen and (max-width: 1400px){
+    .team{
+        margin: -800px 10vw 40px 10vw;
+    }
+
+}
+
+@media screen and (max-width: 1000px){
+    .team{
+        margin: -700px 10vw 40px 10vw;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+
+    .trainer-info {
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+
+    .trainer {
+        max-width: 65vw;
+        margin: auto;
+    }
+
+    .info {
+        grid-row: 2/3;
+        grid-column: 1/2;
+        margin-bottom: 50px;
+        line-height: 40px;
+        text-align: center;
+    }
+    
+
+/* --------------------------------------------------------------------------------------------------------- */
+/*tldr*/
+
+.tldr {
+    grid-template-columns: 1fr;
+    background-image: url('/images/shattered-ice-small-bigger.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 350% 60%;
+    background-position-y: 0;
+}
+
+.block-o-text2{
+    grid-column: 1/5;
+    padding-left: 0vw;
+    padding-bottom: 0px;
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+/*pokemon team*/
+
+.pokemon-info{
+    width: 60vw;
+}
+
+.thing{
+    padding-top: 0px;
+}
+
+.team{
+    margin: 0px 10vw 0px 10vw;
+    padding: 2.5vw;
+    background-position-x: 0;
+    background-size: 550% 80%;
+}
+
+.team-info{
+    grid-template-columns: 1fr;
+}
+
+.walrein{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    margin: auto;
+}
+
+#warning{
+    padding-bottom: 20px;
+}
+
+.glaceon{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    margin: auto;
+}
+
+.avalugg{
+    grid-row: 3/4;
+    grid-column: 1/2;
+    margin: auto;
+}
+
+.delibird{
+    grid-row: 4/5;
+    grid-column: 1/2;
+    margin: auto;
+}
+
+.abomasnow{
+    grid-row: 5/6;
+    grid-column: 1/2;
+    margin: auto;
+}
+
+}

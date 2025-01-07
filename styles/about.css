@@ -1,0 +1,66 @@
+#banner{
+    height: 50vw;
+    width: 100%;
+    margin-bottom: 100px;
+    object-fit: cover;
+}
+
+/* Bio */
+#about{
+    display: grid;
+    row-gap: 100px;
+}
+
+.bio{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 30px;
+    margin: 0px 10vw 0px 10vw;
+}
+
+.bio h2{
+    margin-top: 10px;
+}
+
+.bio img{
+    max-width: 25vw;
+    grid-row: span 2;
+}
+
+
+.bio p{
+    line-height: 40px;
+    font-family: "Caveat", cursive;
+    font-size: 1.4em;
+    font-weight: 400;
+}
+
+/* Misc */
+h2{
+    font-family: "Sunflower", system-ui;
+}
+
+/* Responsive */
+@media screen and (max-width: 1000px){
+    #banner{
+        height: 60vw;
+    }
+
+    .bio{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+
+    .bio img{
+        max-width: 100%;
+        grid-column: span 1;
+    }
+    
+}
+
+@media screen and (max-width: 600px){
+    #banner{
+        height: 70vw;
+    }
+}
