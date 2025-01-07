@@ -61,7 +61,7 @@
 /* Welcome Message */
 #welcome{
     border: 7px solid transparent;
-    border-image: url('/images/airmail-background.jpg') 20 stretch;
+    border-image: url('images/airmail-background.jpg') 20 stretch;
     padding: 30px;
     padding-bottom: 80px;
 }
