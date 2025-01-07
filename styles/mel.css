@@ -1,5 +1,5 @@
 main {
-    background-image: linear-gradient(rgba(145, 209, 247, 0.5), rgba(145, 209, 247, 0.5)), url('/images/wallpaper-ice.jpg');
+    background-image: linear-gradient(rgba(145, 209, 247, 0.5), rgba(145, 209, 247, 0.5)), url('images/wallpaper-ice.jpg');
     display: grid;
 }
 /* --------------------------------------------------------------------------------------------------------- */
