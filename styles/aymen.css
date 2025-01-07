@@ -1,6 +1,6 @@
 /* Main Background */
 main{
-    background-image: linear-gradient(rgba(218, 80, 0, 0.57), rgba(255, 98, 0, 0.7) ), url('/images/wallpaper-fighting.jpg');
+    background-image: linear-gradient(rgba(218, 80, 0, 0.57), rgba(255, 98, 0, 0.7) ), url('images/wallpaper-fighting.jpg');
 }
 
 main{
