@@ -1,6 +1,6 @@
 /* Main Background */
 main{
-    background-image: linear-gradient(rgba(35, 23, 52, 0.7), rgba(35, 23, 52, 0.7)), url('images/wallpaper-ghost-2.jpg');
+    background-image: linear-gradient(rgba(35, 23, 52, 0.7), rgba(35, 23, 52, 0.7)), url(../images/wallpaper-ghost-2.jpg);
 }
 
 main{
