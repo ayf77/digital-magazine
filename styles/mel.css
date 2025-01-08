@@ -1,5 +1,5 @@
 main {
-    background-image: linear-gradient(rgba(145, 209, 247, 0.5), rgba(145, 209, 247, 0.5)), url('images/wallpaper-ice.jpg');
+    background-image: linear-gradient(rgba(145, 209, 247, 0.5), rgba(145, 209, 247, 0.5)), url(../images/wallpaper-ice.jpg);
     display: grid;
 }
 /* --------------------------------------------------------------------------------------------------------- */
@@ -44,7 +44,7 @@ main {
     padding: 2.5vw;
     text-align: justify;
     line-height: 40px;
-    background-image: url('/images/shattered-ice-small.svg');
+    background-image: url(../images/shattered-ice-small.svg);
     background-repeat: no-repeat;
     background-size:auto;
 }
@@ -76,7 +76,7 @@ main {
 .team{
     margin: -1000px 10vw 40px 10vw;
     padding: 2.5vw;
-    background-image: url('/images/shattered-ice.svg');
+    background-image: url(../images/shattered-ice.svg);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 100% 60%;
@@ -216,7 +216,7 @@ h2 {
 
 .tldr {
     grid-template-columns: 1fr;
-    background-image: url('/images/shattered-ice-small-bigger.svg');
+    background-image: url(../images/shattered-ice-small-bigger.svg);
     background-repeat: no-repeat;
     background-position: right;
     background-size: 350% 60%;
