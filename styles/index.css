@@ -131,17 +131,17 @@
 /* BACKGROUND STUFF*/
 #reo-guest{
     transition: 0.4s;
-    background-image: linear-gradient(rgba(142, 124, 193, 0.7), rgba(13, 0, 60, 0.7)), url('/images/wallpaper-ghost-2.jpg');
+    background-image: linear-gradient(rgba(142, 124, 193, 0.7), rgba(13, 0, 60, 0.7)), url('images/wallpaper-ghost-2.jpg');
 }
 
 #aymen-guest{
     transition: 0.4s;
-    background-image: linear-gradient(rgba(183, 111, 28, 0.7), rgba(47, 12, 0, 0.7)), url('/images/wallpaper-fighting.jpg');
+    background-image: linear-gradient(rgba(183, 111, 28, 0.7), rgba(47, 12, 0, 0.7)), url('images/wallpaper-fighting.jpg');
 }
 
 #mel-guest{
     transition: 0.4s;
-    background-image: linear-gradient(rgba(184, 229, 255, 0.5), rgba(0, 57, 118, 0.5)), url('/images/wallpaper-ice.jpg');
+    background-image: linear-gradient(rgba(184, 229, 255, 0.5), rgba(0, 57, 118, 0.5)), url('images/wallpaper-ice.jpg');
 }
 
 /* Buttons */
